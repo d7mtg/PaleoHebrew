@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>StringsTable</key>
+	<string>Root</string>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>FooterText</key>
+			<string>To enable the Paleo Hebrew Keyboard: tap on Keyboards &gt; Add New Keyboard, then select Paleo Hebrew Keyboard. If it doesn't appear, close and reopen the Settings app. To use the keyboard, tap the globe icon wherever there's a text input.</string>
+		</dict>
+		
+		
+	</array>
+</dict>
+</plist>

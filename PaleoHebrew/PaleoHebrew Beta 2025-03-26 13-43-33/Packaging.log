@@ -1,0 +1,149 @@
+2025-03-26 17:43:29 +0000  Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x3b96289d0; archive(resolved)="<IDEArchive: 0x60000fe79570>", distributionTask(resolved)="2", distributionDestination(resolved)="1", distributionMethod(resolved)="<IDEDistributionMethodiOSAdHoc: 0x60000575e470>", team(resolved)="<IDEProvisioningDisambiguatableBasicTeam: 0x600000c50800; teamID='444XUVT54V', teamName='Yitzchok Sabel', teamType='Individual', username='yitzchok@d7mtg.com', isFreeProvisioningTeam='0'>">
+	Chain (16, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0x3b96289d0; archive = "<IDEArchive: 0x60000fe79570>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x60000575e470>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600000c50800; teamID='444XUVT54V', teamName='Yitzchok Sabel', teamType='Individual', username='yitzchok@d7mtg.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionProcessingPipelineContext: 0x1120f8610; archive = "<IDEArchive: 0x60000fe79570>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x60000575e470>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600000c50800; teamID='444XUVT54V', teamName='Yitzchok Sabel', teamType='Individual', username='yitzchok@d7mtg.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x3bce5e270; archive = "<IDEArchive: 0x60000fe79570>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x60000575e470>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600000c50800; teamID='444XUVT54V', teamName='Yitzchok Sabel', teamType='Individual', username='yitzchok@d7mtg.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x39d7d2050; archive = "<IDEArchive: 0x60000fe79570>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x60000575e470>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600000c50800; teamID='444XUVT54V', teamName='Yitzchok Sabel', teamType='Individual', username='yitzchok@d7mtg.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x312d60a20; archive = "<IDEArchive: 0x60000fe79570>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x60000575e470>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600000c50800; teamID='444XUVT54V', teamName='Yitzchok Sabel', teamType='Individual', username='yitzchok@d7mtg.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x312d199a0; archive = "<IDEArchive: 0x60000fe79570>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x60000575e470>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600000c50800; teamID='444XUVT54V', teamName='Yitzchok Sabel', teamType='Individual', username='yitzchok@d7mtg.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x3bd8a1880; archive = "<IDEArchive: 0x60000fe79570>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x60000575e470>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600000c50800; teamID='444XUVT54V', teamName='Yitzchok Sabel', teamType='Individual', username='yitzchok@d7mtg.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x3bce51090; archive = "<IDEArchive: 0x60000fe79570>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x60000575e470>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600000c50800; teamID='444XUVT54V', teamName='Yitzchok Sabel', teamType='Individual', username='yitzchok@d7mtg.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x112014610; archive = "<IDEArchive: 0x60000fe79570>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x60000575e470>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600000c50800; teamID='444XUVT54V', teamName='Yitzchok Sabel', teamType='Individual', username='yitzchok@d7mtg.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x1120edef0; archive = "<IDEArchive: 0x60000fe79570>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x60000575e470>", team="(null)">
+	<IDEDistributionContext: 0x312dc1bb0; archive = "<IDEArchive: 0x60000fe79570>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x60000575e470>", team="(null)">
+	<IDEDistributionContext: 0x312d62770; archive = "<IDEArchive: 0x60000fe79570>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x60000575e470>", team="(null)">
+	<IDEDistributionContext: 0x3bce51cb0; archive = "<IDEArchive: 0x60000fe79570>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x60000575e470>", team="(null)">
+	<IDEDistributionContext: 0x11c837b00; archive = "<IDEArchive: 0x60000fe79570>", distributionMethod="(null)", team="(null)">
+	<IDEDistributionContext: 0x11c8378f0; archive = "<IDEArchive: 0x60000fe79570>", distributionMethod="(null)", team="(null)">
+	<IDEDistributionContext: 0x11c8376e0; archive = "<IDEArchive: 0x60000fe79570>", distributionMethod="(null)", team="(null)">
+</IDEDistributionProcessingPipelineContext: 0x3b96289d0>
+2025-03-26 17:43:29 +0000  Processing step: IDEDistributionCreateDestRootStep
+2025-03-26 17:43:29 +0000  Processing step: IDEDistributionCopyItemStep
+2025-03-26 17:43:29 +0000  Running /usr/bin/ditto '-V' '/Users/yitzchoksabel/Library/Developer/Xcode/Archives/2025-03-26/PaleoHebrew Beta 3-26-25, 1.17 PM.xcarchive/Products/Applications/PaleoHebrew.app' '/var/folders/bt/v1lspm_54dn5j74f0v1tqly40000gn/T/XcodeDistPipeline.~~~hdpcYt/Root/Payload/PaleoHebrew.app'
+2025-03-26 17:43:29 +0000  >>> Copying /Users/yitzchoksabel/Library/Developer/Xcode/Archives/2025-03-26/PaleoHebrew Beta 3-26-25, 1.17 PM.xcarchive/Products/Applications/PaleoHebrew.app 
+2025-03-26 17:43:29 +0000  copying file ./_CodeSignature/CodeResources ... 
+2025-03-26 17:43:29 +0000  3663 bytes for ./_CodeSignature/CodeResources
+2025-03-26 17:43:29 +0000  copying file ./Packaging.log ... 
+2025-03-26 17:43:29 +0000  16299 bytes for ./Packaging.log
+2025-03-26 17:43:29 +0000  copying file ./AppIcon60x60@2x.png ... 
+2025-03-26 17:43:29 +0000  4022 bytes for ./AppIcon60x60@2x.png
+2025-03-26 17:43:29 +0000  copying file ./PaleoHebrew.ipa ... 
+2025-03-26 17:43:29 +0000  1032650 bytes for ./PaleoHebrew.ipa
+2025-03-26 17:43:29 +0000  copying file ./ExportOptions.plist ... 
+2025-03-26 17:43:29 +0000  188 bytes for ./ExportOptions.plist
+2025-03-26 17:43:29 +0000  copying file ./Assets.car ... 
+2025-03-26 17:43:29 +0000  4957344 bytes for ./Assets.car
+2025-03-26 17:43:29 +0000  copying file ./AppIcon76x76@2x~ipad.png ... 
+2025-03-26 17:43:29 +0000  5675 bytes for ./AppIcon76x76@2x~ipad.png
+2025-03-26 17:43:29 +0000  copying file ./PaleoHebrew ... 
+2025-03-26 17:43:29 +0000  615888 bytes for ./PaleoHebrew
+2025-03-26 17:43:29 +0000  copying file ./DistributionSummary.plist ... 
+2025-03-26 17:43:29 +0000  634 bytes for ./DistributionSummary.plist
+2025-03-26 17:43:29 +0000  copying file ./embedded.mobileprovision ... 
+2025-03-26 17:43:29 +0000  12352 bytes for ./embedded.mobileprovision
+2025-03-26 17:43:29 +0000  copying file ./Info.plist ... 
+2025-03-26 17:43:29 +0000  1557 bytes for ./Info.plist
+2025-03-26 17:43:29 +0000  copying file ./PkgInfo ... 
+2025-03-26 17:43:29 +0000  8 bytes for ./PkgInfo
+2025-03-26 17:43:29 +0000  /usr/bin/ditto exited with 0
+2025-03-26 17:43:29 +0000  Processing step: IDEDistributionEmbedProfileStep
+2025-03-26 17:43:29 +0000  Processing step: IDEDistributionInfoPlistStep
+2025-03-26 17:43:29 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2025-03-26 17:43:29 +0000  Processing step: IDEDistributionAppThinningPlistStep
+2025-03-26 17:43:29 +0000  Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2025-03-26 17:43:29 +0000  Processing step: IDEDistributionSymbolsStep
+2025-03-26 17:43:29 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2025-03-26 17:43:29 +0000  Processing step: IDEDistributionAppThinningStep
+2025-03-26 17:43:29 +0000  Skipping step: IDEDistributionAppThinningStep because it said so
+2025-03-26 17:43:29 +0000  Processing step: IDEDistributionArchThinningStep
+2025-03-26 17:43:29 +0000  Item /Users/yitzchoksabel/Library/Developer/Xcode/Archives/2025-03-26/PaleoHebrew Beta 3-26-25, 1.17 PM.xcarchive/Products/Applications/PaleoHebrew.app doesn't have the entitlement com.apple.developer.web-browser-engine.host enabled, returning ["arm64e"]
+2025-03-26 17:43:29 +0000  Archs to thin for item /Users/yitzchoksabel/Library/Developer/Xcode/Archives/2025-03-26/PaleoHebrew Beta 3-26-25, 1.17 PM.xcarchive/Products/Applications/PaleoHebrew.app are ["arm64e"]
+2025-03-26 17:43:29 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/bt/v1lspm_54dn5j74f0v1tqly40000gn/T/XcodeDistPipeline.~~~hdpcYt/Root/Payload/PaleoHebrew.app/PaleoHebrew' '-verify_arch' 'arm64e'
+2025-03-26 17:43:29 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2025-03-26 17:43:29 +0000  Skipping architecture thinning for item "PaleoHebrew" because arch "arm64e" wasn't found
+2025-03-26 17:43:29 +0000  Processing step: IDEDistributionODRStep
+2025-03-26 17:43:29 +0000  Processing step: IDEDistributionStripXattrsStep
+2025-03-26 17:43:29 +0000  Skipping stripping extended attributes because the codesign step will strip them.
+2025-03-26 17:43:29 +0000  Processing step: IDEDistributionCodesignStep
+2025-03-26 17:43:29 +0000  Entitlements for <IDEDistributionItem: 0x60001708a0a0; bundleID='d7mtg.PaleoHebrew', path='<DVTFilePath:0x60000b073a80:'/Users/yitzchoksabel/Library/Developer/Xcode/Archives/2025-03-26/PaleoHebrew Beta 3-26-25, 1.17 PM.xcarchive/Products/Applications/PaleoHebrew.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x60000b652580; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000060318c0; name='Apple Development: Yitzchok Sabel (RW87RYC492)', hash='88A38589E530C903B8097D8C7855D84CDCB90CBE', serialNumber='EC124EE7942BE7890477FD7578DA853', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2025-03-23 20:49:03 +0000''>', entitlements='{
+    "application-identifier" = "444XUVT54V.d7mtg.PaleoHebrew";
+    "com.apple.developer.team-identifier" = 444XUVT54V;
+    "get-task-allow" = 1;
+}', teamID='444XUVT54V', identifier='d7mtg.PaleoHebrew', executablePath='<DVTFilePath:0x60000b077d80:'/Users/yitzchoksabel/Library/Developer/Xcode/Archives/2025-03-26/PaleoHebrew Beta 3-26-25, 1.17 PM.xcarchive/Products/Applications/PaleoHebrew.app/PaleoHebrew'>', hardenedRuntime='0'>'>: {
+    "application-identifier" = "444XUVT54V.d7mtg.PaleoHebrew";
+    "com.apple.developer.team-identifier" = 444XUVT54V;
+    "get-task-allow" = 0;
+}
+2025-03-26 17:43:29 +0000  Associated App Clip Identifiers Filter: Skipping because "com.apple.developer.associated-appclip-app-identifiers" is not present
+2025-03-26 17:43:29 +0000  Entitlements for <IDEDistributionItem: 0x60001708a0a0; bundleID='d7mtg.PaleoHebrew', path='<DVTFilePath:0x60000b073a80:'/Users/yitzchoksabel/Library/Developer/Xcode/Archives/2025-03-26/PaleoHebrew Beta 3-26-25, 1.17 PM.xcarchive/Products/Applications/PaleoHebrew.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x60000b652580; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000060312c0; name='Apple Development: Yitzchok Sabel (RW87RYC492)', hash='88A38589E530C903B8097D8C7855D84CDCB90CBE', serialNumber='EC124EE7942BE7890477FD7578DA853', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2025-03-23 20:49:03 +0000''>', entitlements='{
+    "application-identifier" = "444XUVT54V.d7mtg.PaleoHebrew";
+    "com.apple.developer.team-identifier" = 444XUVT54V;
+    "get-task-allow" = 1;
+}', teamID='444XUVT54V', identifier='d7mtg.PaleoHebrew', executablePath='<DVTFilePath:0x60000b077d80:'/Users/yitzchoksabel/Library/Developer/Xcode/Archives/2025-03-26/PaleoHebrew Beta 3-26-25, 1.17 PM.xcarchive/Products/Applications/PaleoHebrew.app/PaleoHebrew'>', hardenedRuntime='0'>'> are: {
+    "application-identifier" = "444XUVT54V.d7mtg.PaleoHebrew";
+    "com.apple.developer.team-identifier" = 444XUVT54V;
+    "get-task-allow" = 0;
+}
+2025-03-26 17:43:29 +0000  Writing entitlements for <IDEDistributionItem: 0x60001708a0a0; bundleID='d7mtg.PaleoHebrew', path='<DVTFilePath:0x60000b073a80:'/Users/yitzchoksabel/Library/Developer/Xcode/Archives/2025-03-26/PaleoHebrew Beta 3-26-25, 1.17 PM.xcarchive/Products/Applications/PaleoHebrew.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x60000b652580; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x600006031d40; name='Apple Development: Yitzchok Sabel (RW87RYC492)', hash='88A38589E530C903B8097D8C7855D84CDCB90CBE', serialNumber='EC124EE7942BE7890477FD7578DA853', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2025-03-23 20:49:03 +0000''>', entitlements='{
+    "application-identifier" = "444XUVT54V.d7mtg.PaleoHebrew";
+    "com.apple.developer.team-identifier" = 444XUVT54V;
+    "get-task-allow" = 1;
+}', teamID='444XUVT54V', identifier='d7mtg.PaleoHebrew', executablePath='<DVTFilePath:0x60000b077d80:'/Users/yitzchoksabel/Library/Developer/Xcode/Archives/2025-03-26/PaleoHebrew Beta 3-26-25, 1.17 PM.xcarchive/Products/Applications/PaleoHebrew.app/PaleoHebrew'>', hardenedRuntime='0'>'> to: /var/folders/bt/v1lspm_54dn5j74f0v1tqly40000gn/T/XcodeDistPipeline.~~~hdpcYt/entitlements~~~qjNGOx
+2025-03-26 17:43:29 +0000  invoking codesign: <NSConcreteTask: 0x60001728bde0; launchPath='/usr/bin/codesign', arguments='(
+    "-f",
+    "-s",
+    7D02C3A306CC95594456DEB1555362747ADC0417,
+    "--entitlements",
+    "/var/folders/bt/v1lspm_54dn5j74f0v1tqly40000gn/T/XcodeDistPipeline.~~~hdpcYt/entitlements~~~qjNGOx",
+    "--preserve-metadata=identifier,flags,runtime",
+    "--generate-entitlement-der",
+    "--strip-disallowed-xattrs",
+    "-vvv",
+    "/var/folders/bt/v1lspm_54dn5j74f0v1tqly40000gn/T/XcodeDistPipeline.~~~hdpcYt/Root/Payload/PaleoHebrew.app"
+)'>
+2025-03-26 17:43:29 +0000  codesign output: /var/folders/bt/v1lspm_54dn5j74f0v1tqly40000gn/T/XcodeDistPipeline.~~~hdpcYt/Root/Payload/PaleoHebrew.app: replacing existing signature
+/var/folders/bt/v1lspm_54dn5j74f0v1tqly40000gn/T/XcodeDistPipeline.~~~hdpcYt/Root/Payload/PaleoHebrew.app: signed app bundle with Mach-O thin (arm64) [d7mtg.PaleoHebrew]
+2025-03-26 17:43:29 +0000  Processing step: IDEDistributionZipODRItemStep
+2025-03-26 17:43:29 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2025-03-26 17:43:29 +0000  Processing step: IDEDistributionCreateIPAStep
+2025-03-26 17:43:29 +0000  Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/bt/v1lspm_54dn5j74f0v1tqly40000gn/T/XcodeDistPipeline.~~~hdpcYt/Root' '/var/folders/bt/v1lspm_54dn5j74f0v1tqly40000gn/T/XcodeDistPipeline.~~~hdpcYt/Packages/PaleoHebrew.ipa'
+2025-03-26 17:43:29 +0000  >>> Copying /var/folders/bt/v1lspm_54dn5j74f0v1tqly40000gn/T/XcodeDistPipeline.~~~hdpcYt/Root 
+2025-03-26 17:43:29 +0000  copying file ./Payload/PaleoHebrew.app/_CodeSignature/CodeResources ... 
+2025-03-26 17:43:29 +0000  3663 bytes for ./Payload/PaleoHebrew.app/_CodeSignature/CodeResources
+2025-03-26 17:43:29 +0000  copying file ./Payload/PaleoHebrew.app/Packaging.log ... 
+2025-03-26 17:43:29 +0000  16299 bytes for ./Payload/PaleoHebrew.app/Packaging.log
+2025-03-26 17:43:29 +0000  copying file ./Payload/PaleoHebrew.app/AppIcon60x60@2x.png ... 
+2025-03-26 17:43:29 +0000  4022 bytes for ./Payload/PaleoHebrew.app/AppIcon60x60@2x.png
+2025-03-26 17:43:29 +0000  copying file ./Payload/PaleoHebrew.app/PaleoHebrew.ipa ... 
+2025-03-26 17:43:29 +0000  1032650 bytes for ./Payload/PaleoHebrew.app/PaleoHebrew.ipa
+2025-03-26 17:43:29 +0000  copying file ./Payload/PaleoHebrew.app/ExportOptions.plist ... 
+188 bytes for ./Payload/PaleoHebrew.app/ExportOptions.plist
+2025-03-26 17:43:29 +0000  copying file ./Payload/PaleoHebrew.app/Assets.car ... 
+2025-03-26 17:43:29 +0000  4957344 bytes for ./Payload/PaleoHebrew.app/Assets.car
+2025-03-26 17:43:29 +0000  copying file ./Payload/PaleoHebrew.app/AppIcon76x76@2x~ipad.png ... 
+5675 bytes for ./Payload/PaleoHebrew.app/AppIcon76x76@2x~ipad.png
+copying file ./Payload/PaleoHebrew.app/PaleoHebrew ... 
+2025-03-26 17:43:29 +0000  615888 bytes for ./Payload/PaleoHebrew.app/PaleoHebrew
+2025-03-26 17:43:29 +0000  copying file ./Payload/PaleoHebrew.app/DistributionSummary.plist ... 
+2025-03-26 17:43:29 +0000  634 bytes for ./Payload/PaleoHebrew.app/DistributionSummary.plist
+copying file ./Payload/PaleoHebrew.app/embedded.mobileprovision ... 
+2025-03-26 17:43:29 +0000  14552 bytes for ./Payload/PaleoHebrew.app/embedded.mobileprovision
+2025-03-26 17:43:29 +0000  copying file ./Payload/PaleoHebrew.app/Info.plist ... 
+2025-03-26 17:43:29 +0000  1557 bytes for ./Payload/PaleoHebrew.app/Info.plist
+2025-03-26 17:43:29 +0000  copying file ./Payload/PaleoHebrew.app/PkgInfo ... 
+8 bytes for ./Payload/PaleoHebrew.app/PkgInfo
+2025-03-26 17:43:29 +0000  /usr/bin/ditto exited with 0
+2025-03-26 17:43:29 +0000  Processing step: IDEDistributionAppStoreInformationStep
+2025-03-26 17:43:29 +0000  Skipping step: IDEDistributionAppStoreInformationStep because it said so
+2025-03-26 17:43:29 +0000  Processing step: IDEDistributionGenerateProcessedDistributionItems
+2025-03-26 17:43:29 +0000  IDEDistributionItem init <DVTFilePath:0x60001312d140:'/var/folders/bt/v1lspm_54dn5j74f0v1tqly40000gn/T/XcodeDistPipeline.~~~hdpcYt/Root/Payload/PaleoHebrew.app'>
+2025-03-26 17:43:29 +0000  Processing step: IDEDistributionCreateManifestStep

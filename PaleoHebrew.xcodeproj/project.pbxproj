@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		80984B3F2D90D399006D0153 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80984B3E2D90D399006D0153 /* Media.xcassets */; };
+		80E2B8982D95BE0000B81EAD /* PaleoProKeyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 80E2B8912D95BE0000B81EAD /* PaleoProKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		80E2B8A72D95C94C00B81EAD /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 80E2B8A62D95C94C00B81EAD /* KeyboardKit */; };
+		80E2B8A92D95CAC100B81EAD /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 80E2B8A82D95CAC100B81EAD /* KeyboardKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		80984B0B2D90AD92006D0153 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,17 +28,68 @@
 			remoteGlobalIDString = 80984AF92D90AD91006D0153;
 			remoteInfo = PaleoHebrew;
 		};
+		80E2B8962D95BE0000B81EAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80984AF22D90AD91006D0153 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80E2B8902D95BE0000B81EAD;
+			remoteInfo = PaleoProKeyboard;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		80E2B89E2D95BE0000B81EAD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				80E2B8982D95BE0000B81EAD /* PaleoProKeyboard.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		80984AFA2D90AD91006D0153 /* PaleoHebrew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaleoHebrew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80984B0A2D90AD92006D0153 /* PaleoHebrewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaleoHebrewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80984B142D90AD92006D0153 /* PaleoHebrewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaleoHebrewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80984B3E2D90D399006D0153 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		80E2B8912D95BE0000B81EAD /* PaleoProKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PaleoProKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		80E2B8992D95BE0000B81EAD /* Exceptions for "PaleoProKeyboard" folder in "PaleoProKeyboard" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 80E2B8902D95BE0000B81EAD /* PaleoProKeyboard */;
+		};
+		80E2B8A22D95BF8600B81EAD /* Exceptions for "PaleoProKeyboard" folder in "PaleoHebrew" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				KeyboardViewController.swift,
+				Settings.bundle,
+			);
+			target = 80984AF92D90AD91006D0153 /* PaleoHebrew */;
+		};
+		80E2B8A42D95BFE300B81EAD /* Exceptions for "PaleoHebrew" folder in "PaleoProKeyboard" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				PaleoLetterData.swift,
+			);
+			target = 80E2B8902D95BE0000B81EAD /* PaleoProKeyboard */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		80984AFC2D90AD91006D0153 /* PaleoHebrew */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				80E2B8A42D95BFE300B81EAD /* Exceptions for "PaleoHebrew" folder in "PaleoProKeyboard" target */,
+			);
 			path = PaleoHebrew;
 			sourceTree = "<group>";
 		};
@@ -45,6 +103,15 @@
 			path = PaleoHebrewUITests;
 			sourceTree = "<group>";
 		};
+		80E2B8922D95BE0000B81EAD /* PaleoProKeyboard */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				80E2B8A22D95BF8600B81EAD /* Exceptions for "PaleoProKeyboard" folder in "PaleoHebrew" target */,
+				80E2B8992D95BE0000B81EAD /* Exceptions for "PaleoProKeyboard" folder in "PaleoProKeyboard" target */,
+			);
+			path = PaleoProKeyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80E2B8A92D95CAC100B81EAD /* KeyboardKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,15 +137,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		80E2B88E2D95BE0000B81EAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E2B8A72D95C94C00B81EAD /* KeyboardKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		80984AF12D90AD91006D0153 = {
 			isa = PBXGroup;
 			children = (
+				80984B3E2D90D399006D0153 /* Media.xcassets */,
 				80984AFC2D90AD91006D0153 /* PaleoHebrew */,
 				80984B0D2D90AD92006D0153 /* PaleoHebrewTests */,
 				80984B172D90AD92006D0153 /* PaleoHebrewUITests */,
+				80E2B8922D95BE0000B81EAD /* PaleoProKeyboard */,
 				80984AFB2D90AD91006D0153 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +166,7 @@
 				80984AFA2D90AD91006D0153 /* PaleoHebrew.app */,
 				80984B0A2D90AD92006D0153 /* PaleoHebrewTests.xctest */,
 				80984B142D90AD92006D0153 /* PaleoHebrewUITests.xctest */,
+				80E2B8912D95BE0000B81EAD /* PaleoProKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,16 +181,19 @@
 				80984AF62D90AD91006D0153 /* Sources */,
 				80984AF72D90AD91006D0153 /* Frameworks */,
 				80984AF82D90AD91006D0153 /* Resources */,
+				80E2B89E2D95BE0000B81EAD /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				80E2B8972D95BE0000B81EAD /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				80984AFC2D90AD91006D0153 /* PaleoHebrew */,
 			);
 			name = PaleoHebrew;
 			packageProductDependencies = (
+				80E2B8A82D95CAC100B81EAD /* KeyboardKit */,
 			);
 			productName = PaleoHebrew;
 			productReference = 80984AFA2D90AD91006D0153 /* PaleoHebrew.app */;
@@ -163,6 +245,29 @@
 			productReference = 80984B142D90AD92006D0153 /* PaleoHebrewUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		80E2B8902D95BE0000B81EAD /* PaleoProKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80E2B89A2D95BE0000B81EAD /* Build configuration list for PBXNativeTarget "PaleoProKeyboard" */;
+			buildPhases = (
+				80E2B88D2D95BE0000B81EAD /* Sources */,
+				80E2B88E2D95BE0000B81EAD /* Frameworks */,
+				80E2B88F2D95BE0000B81EAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				80E2B8922D95BE0000B81EAD /* PaleoProKeyboard */,
+			);
+			name = PaleoProKeyboard;
+			packageProductDependencies = (
+				80E2B8A62D95C94C00B81EAD /* KeyboardKit */,
+			);
+			productName = PaleoProKeyboard;
+			productReference = 80E2B8912D95BE0000B81EAD /* PaleoProKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -171,7 +276,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
-				LastUpgradeCheck = 1620;
+				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					80984AF92D90AD91006D0153 = {
 						CreatedOnToolsVersion = 16.2;
@@ -184,6 +289,9 @@
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = 80984AF92D90AD91006D0153;
 					};
+					80E2B8902D95BE0000B81EAD = {
+						CreatedOnToolsVersion = 16.2;
+					};
 				};
 			};
 			buildConfigurationList = 80984AF52D90AD91006D0153 /* Build configuration list for PBXProject "PaleoHebrew" */;
@@ -195,6 +303,9 @@
 			);
 			mainGroup = 80984AF12D90AD91006D0153;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				80E2B8A52D95C94C00B81EAD /* XCRemoteSwiftPackageReference "KeyboardKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 80984AFB2D90AD91006D0153 /* Products */;
 			projectDirPath = "";
@@ -203,6 +314,7 @@
 				80984AF92D90AD91006D0153 /* PaleoHebrew */,
 				80984B092D90AD92006D0153 /* PaleoHebrewTests */,
 				80984B132D90AD92006D0153 /* PaleoHebrewUITests */,
+				80E2B8902D95BE0000B81EAD /* PaleoProKeyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +324,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80984B3F2D90D399006D0153 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +336,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		80984B122D90AD92006D0153 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80E2B88F2D95BE0000B81EAD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +373,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		80E2B88D2D95BE0000B81EAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -266,13 +393,148 @@
 			target = 80984AF92D90AD91006D0153 /* PaleoHebrew */;
 			targetProxy = 80984B152D90AD92006D0153 /* PBXContainerItemProxy */;
 		};
+		80E2B8972D95BE0000B81EAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80E2B8902D95BE0000B81EAD /* PaleoProKeyboard */;
+			targetProxy = 80E2B8962D95BE0000B81EAD /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		807E2AFD2D93373B001AD334 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon-neutral AppIcon-green AppIcon-orange AppIcon-pink AppIcon-purple AppIcon-red AppIcon-teal AppIcon-indigo";
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 444XUVT54V;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Beta;
+		};
+		807E2AFE2D93373B001AD334 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES[sdk=*]" = "AppIcon-purple AppIcon-red AppIcon-green AppIcon-pink AppIcon-orange AppIcon-blue AppIcon-neutral AppIcon-indigo";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = PaleoHebrew/PaleoHebrew.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PaleoHebrew/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Paleo Pro";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = d7mtg.PaleoHebrew;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Beta;
+		};
+		807E2AFF2D93373B001AD334 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = d7mtg.PaleoHebrewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaleoHebrew.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PaleoHebrew";
+			};
+			name = Beta;
+		};
+		807E2B002D93373B001AD334 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = d7mtg.PaleoHebrewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PaleoHebrew;
+			};
+			name = Beta;
+		};
 		80984B1C2D90AD92006D0153 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon-neutral AppIcon-green AppIcon-orange AppIcon-pink AppIcon-purple AppIcon-red AppIcon-teal AppIcon-indigo";
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -304,6 +566,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 444XUVT54V;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -336,6 +599,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon-neutral AppIcon-green AppIcon-orange AppIcon-pink AppIcon-purple AppIcon-red AppIcon-teal AppIcon-indigo";
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -367,6 +631,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 444XUVT54V;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -391,58 +656,74 @@
 		80984B1F2D90AD92006D0153 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon-neutral AppIcon-green AppIcon-orange AppIcon-pink AppIcon-purple AppIcon-red AppIcon-blue AppIcon-indigo";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = PaleoHebrew/PaleoHebrew.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PaleoHebrew/Preview Content\"";
-				DEVELOPMENT_TEAM = 444XUVT54V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Paleo Pro";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = d7mtg.PaleoHebrew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		80984B202D90AD92006D0153 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon-neutral AppIcon-green AppIcon-orange AppIcon-pink AppIcon-purple AppIcon-red AppIcon-blue AppIcon-indigo";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = PaleoHebrew/PaleoHebrew.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PaleoHebrew/Preview Content\"";
-				DEVELOPMENT_TEAM = 444XUVT54V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Paleo Pro";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = d7mtg.PaleoHebrew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -452,7 +733,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 444XUVT54V;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MARKETING_VERSION = 1.0;
@@ -471,7 +751,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 444XUVT54V;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MARKETING_VERSION = 1.0;
@@ -489,7 +768,6 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 444XUVT54V;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = d7mtg.PaleoHebrewUITests;
@@ -506,7 +784,6 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 444XUVT54V;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = d7mtg.PaleoHebrewUITests;
@@ -518,6 +795,84 @@
 			};
 			name = Release;
 		};
+		80E2B89B2D95BE0000B81EAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PaleoProKeyboard/PaleoProKeyboard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PaleoProKeyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Paleo Hebrew";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = d7mtg.PaleoHebrew.PaleoProKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80E2B89C2D95BE0000B81EAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PaleoProKeyboard/PaleoProKeyboard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PaleoProKeyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Paleo Hebrew";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = d7mtg.PaleoHebrew.PaleoProKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		80E2B89D2D95BE0000B81EAD /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PaleoProKeyboard/PaleoProKeyboard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PaleoProKeyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Paleo Hebrew";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = d7mtg.PaleoHebrew.PaleoProKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Beta;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -526,6 +881,7 @@
 			buildConfigurations = (
 				80984B1C2D90AD92006D0153 /* Debug */,
 				80984B1D2D90AD92006D0153 /* Release */,
+				807E2AFD2D93373B001AD334 /* Beta */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -535,6 +891,7 @@
 			buildConfigurations = (
 				80984B1F2D90AD92006D0153 /* Debug */,
 				80984B202D90AD92006D0153 /* Release */,
+				807E2AFE2D93373B001AD334 /* Beta */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -544,6 +901,7 @@
 			buildConfigurations = (
 				80984B222D90AD92006D0153 /* Debug */,
 				80984B232D90AD92006D0153 /* Release */,
+				807E2AFF2D93373B001AD334 /* Beta */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -553,11 +911,46 @@
 			buildConfigurations = (
 				80984B252D90AD92006D0153 /* Debug */,
 				80984B262D90AD92006D0153 /* Release */,
+				807E2B002D93373B001AD334 /* Beta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80E2B89A2D95BE0000B81EAD /* Build configuration list for PBXNativeTarget "PaleoProKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80E2B89B2D95BE0000B81EAD /* Debug */,
+				80E2B89C2D95BE0000B81EAD /* Release */,
+				80E2B89D2D95BE0000B81EAD /* Beta */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		80E2B8A52D95C94C00B81EAD /* XCRemoteSwiftPackageReference "KeyboardKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/KeyboardKit/KeyboardKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.3.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		80E2B8A62D95C94C00B81EAD /* KeyboardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80E2B8A52D95C94C00B81EAD /* XCRemoteSwiftPackageReference "KeyboardKit" */;
+			productName = KeyboardKit;
+		};
+		80E2B8A82D95CAC100B81EAD /* KeyboardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80E2B8A52D95C94C00B81EAD /* XCRemoteSwiftPackageReference "KeyboardKit" */;
+			productName = KeyboardKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 80984AF22D90AD91006D0153 /* Project object */;
 }
