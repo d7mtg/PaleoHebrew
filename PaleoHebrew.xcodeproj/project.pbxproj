@@ -469,7 +469,7 @@
 				CODE_SIGN_ENTITLEMENTS = PaleoHebrew/PaleoHebrew.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"PaleoHebrew/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -663,7 +663,7 @@
 				CODE_SIGN_ENTITLEMENTS = PaleoHebrew/PaleoHebrew.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"PaleoHebrew/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -700,7 +700,7 @@
 				CODE_SIGN_ENTITLEMENTS = PaleoHebrew/PaleoHebrew.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"PaleoHebrew/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -800,7 +800,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = PaleoProKeyboard/PaleoProKeyboard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PaleoProKeyboard/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Paleo Hebrew";
@@ -826,7 +826,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = PaleoProKeyboard/PaleoProKeyboard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PaleoProKeyboard/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Paleo Hebrew";
@@ -852,7 +852,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = PaleoProKeyboard/PaleoProKeyboard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PaleoProKeyboard/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Paleo Hebrew";
