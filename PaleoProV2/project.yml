@@ -1,0 +1,87 @@
+name: PaleoProV2
+options:
+  bundleIdPrefix: d7mtg.PaleoHebrew
+  deploymentTarget:
+    iOS: "26.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+  generateEmptyDirectories: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    # Bumped from V1 (last shipped 1.2) — this is the major rewrite.
+    MARKETING_VERSION: "2.0"
+    CURRENT_PROJECT_VERSION: "1"
+    DEVELOPMENT_TEAM: "444XUVT54V"
+    SWIFT_EMIT_LOC_STRINGS: YES
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    GCC_C_LANGUAGE_STANDARD: gnu17
+    CLANG_ENABLE_MODULES: YES
+
+targets:
+  # ────────────────────────────────────────────────────────────────────
+  # iOS / iPadOS app — same bundle ID as V1 on App Store (id6743683727)
+  # so this archive uploads as a major update, not a new listing.
+  # ────────────────────────────────────────────────────────────────────
+  PaleoProV2:
+    type: application
+    platform: iOS
+    sources:
+      - path: PaleoProV2
+        excludes:
+          - "paleo-v2.icon"
+      - path: PaleoProV2/paleo-v2.icon
+        type: file
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: d7mtg.PaleoHebrew
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SUPPORTS_MACCATALYST: NO
+        GENERATE_INFOPLIST_FILE: YES
+        CODE_SIGN_ENTITLEMENTS: PaleoProV2/PaleoProV2.entitlements
+        ASSETCATALOG_COMPILER_APPICON_NAME: paleo-v2
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        ENABLE_PREVIEWS: YES
+        INFOPLIST_KEY_CFBundleDisplayName: "Paleo Pro"
+        INFOPLIST_KEY_LSApplicationCategoryType: "public.app-category.education"
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: "UIInterfaceOrientationPortrait"
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        INFOPLIST_KEY_NSMotionUsageDescription: "Paleo Pro uses device motion for a subtle parallax effect."
+    dependencies:
+      - target: PaleoProV2Keyboard
+        platformFilter: iOS
+
+  # ────────────────────────────────────────────────────────────────────
+  # Keyboard extension — must match V1's bundle so existing installs
+  # carry over.
+  # ────────────────────────────────────────────────────────────────────
+  PaleoProV2Keyboard:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: PaleoProV2Keyboard
+      # Share the ancient-script fonts so the keyboard can render the chosen
+      # letterform too.
+      - path: PaleoProV2/Fonts
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: d7mtg.PaleoHebrew.PaleoProKeyboard
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SUPPORTS_MACCATALYST: NO
+        GENERATE_INFOPLIST_FILE: NO
+        INFOPLIST_FILE: PaleoProV2Keyboard/Info.plist
+        CODE_SIGN_ENTITLEMENTS: PaleoProV2Keyboard/PaleoProV2Keyboard.entitlements
+
+schemes:
+  PaleoProV2:
+    build:
+      targets:
+        PaleoProV2: all
+        PaleoProV2Keyboard: all
+    run:
+      config: Debug
+    archive:
+      config: Release

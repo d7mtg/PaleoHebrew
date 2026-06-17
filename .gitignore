@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Xcode — user-specific state & build output (regenerable)
+**/xcuserdata/
+*.xcuserstate
+DerivedData/
+build/
+*.xcarchive
+*.ipa
+
+# Swift Package Manager
+.build/
+.swiftpm/
