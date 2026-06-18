@@ -75,28 +75,21 @@ enum Persistence {
     static func makeContainer(inMemory: Bool = false) -> ModelContainer {
         let schema = Schema([QuizRecord.self, LetterStat.self, ConversionRecord.self])
 
-        func build(_ config: ModelConfiguration) -> ModelContainer? {
-            try? ModelContainer(for: schema, configurations: [config])
+        // groupContainer MUST be .none: SwiftData's default .automatic relocates
+        // the store into the App Group container, which is not writable on device.
+        //
+        // CloudKit is intentionally NOT enabled here. Setting cloudKitDatabase:
+        // .automatic without the iCloud entitlement actually provisioned aborts
+        // at launch (it is not a catchable throw, so a try?/fallback cannot
+        // recover from it). The store is local-only. To turn on iCloud sync
+        // later: add the iCloud + CloudKit capability (container
+        // iCloud.d7mtg.PaleoHebrew) in Signing & Capabilities, THEN add
+        // cloudKitDatabase: .automatic below.
+        let config = ModelConfiguration(schema: schema, isStoredInMemoryOnly: inMemory, groupContainer: .none)
+        do {
+            return try ModelContainer(for: schema, configurations: [config])
+        } catch {
+            fatalError("Unable to create ModelContainer: \(error)")
         }
-
-        // groupContainer MUST be .none. With the default .automatic, SwiftData
-        // relocates the store into the App Group container (the app has that
-        // entitlement for the keyboard/widget); on device its Application
-        // Support dir doesn't exist and the sandbox denies creating it, so the
-        // store fails on launch and the watchdog kills the app.
-        if inMemory {
-            if let c = build(.init(schema: schema, isStoredInMemoryOnly: true, groupContainer: .none)) { return c }
-            fatalError("Unable to create in-memory ModelContainer")
-        }
-
-        // Prefer a CloudKit-backed store so quiz progress and conversion history
-        // sync across the user's devices. If iCloud isn't provisioned/available
-        // (e.g. the capability hasn't been enabled, or the user isn't signed in),
-        // fall back to a purely local store so the app always launches. To turn
-        // sync on, add the iCloud + CloudKit capability with the container
-        // iCloud.d7mtg.PaleoHebrew in Xcode's Signing & Capabilities.
-        if let c = build(.init(schema: schema, groupContainer: .none, cloudKitDatabase: .automatic)) { return c }
-        if let c = build(.init(schema: schema, groupContainer: .none, cloudKitDatabase: .none)) { return c }
-        fatalError("Unable to create ModelContainer")
     }
 }
