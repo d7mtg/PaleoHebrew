@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		02A4537BA6B888CC656BB0A8 /* MESHA.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B3F9D04C8DA984918E37CE27 /* MESHA.TTF */; };
+		0CC92B9AC3A5CEF755471999 /* MakabiYG.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21304009F57DB1F5709AE62F /* MakabiYG.ttf */; };
+		100588DC7DEB56AE324D95F7 /* BETSHEAR.TTF in Resources */ = {isa = PBXBuildFile; fileRef = AB9A2CE93B1BBF49CED07947 /* BETSHEAR.TTF */; };
 		15E6A29EF063AC5481DC23AF /* PaleoProV2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297517DD005A2F03CB110AD8 /* PaleoProV2App.swift */; };
 		1940CB093249CAFDD165D609 /* BR_RKB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 3C59A66C64647BBED48605EC /* BR_RKB.TTF */; };
 		1B378B8329987C241BB096F0 /* paleo-v2.icon in Resources */ = {isa = PBXBuildFile; fileRef = F49D7B4FB7DCC31C222075CA /* paleo-v2.icon */; };
@@ -15,26 +17,42 @@
 		1DCF9BC071C7CE73374C5FAD /* PaleoProV2Keyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7A2D80ABBAB274F62F1C6119 /* PaleoProV2Keyboard.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1F04AF4C793804A1087D63A1 /* PROTOCN.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B04137A175775CE577723903 /* PROTOCN.TTF */; };
 		28073E018B79D88BBAEE899C /* SILOAM.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 4B6570EE0B4FC8CF8C9DDE17 /* SILOAM.TTF */; };
+		29FC1E25E026285D02AB40E3 /* SILOAM.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 3E2149B1B70FADCD30C8D0FD /* SILOAM.TTF */; };
+		2AA5E6C760ACFB94089CC34C /* LetterShareCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1689BB27DF73FDAE0FF466 /* LetterShareCard.swift */; };
+		2B96D5F08F75072AA6B3BE11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9711B027CC522A22E7D92ADB /* Assets.xcassets */; };
+		2BD4A13E08C50D0339CB659A /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B33F9B65D5390AF9AB92E6 /* ShareViewController.swift */; };
 		2F05073BE1939C61D025DE34 /* AVIIBCE.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 30953B009C50905446D32367 /* AVIIBCE.TTF */; };
 		30B3E03437EAEB0A9DDB115A /* PaleoFontPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5201286C5B950E17EA006B5D /* PaleoFontPickerView.swift */; };
 		3571AA9778FADC3E87378332 /* BENKOSBA.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 853D143B3165F19DCA3A876D /* BENKOSBA.TTF */; };
 		35949F6318BEEB2AD1F844F4 /* InteractiveBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7DF2ABD77FC416DF065EA /* InteractiveBackground.swift */; };
 		3CBA055D04B88FB547AFBFFD /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FD6958E5D1BE18F9AEC759 /* RootView.swift */; };
+		3F058B94209C42E1A8610068 /* AVIIBCE.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 30953B009C50905446D32367 /* AVIIBCE.TTF */; };
+		40AC266E10380B401EA24D7A /* BR_RKB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 3C59A66C64647BBED48605EC /* BR_RKB.TTF */; };
 		41A4F69C02F6B2336F7B22FA /* Clipboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79F9B29B5A42C60ED64A9CD /* Clipboard.swift */; };
+		4897A6C642479DB968F433FD /* LACHISH.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 2EA50D74CF184D7C363BFF52 /* LACHISH.TTF */; };
 		49D4750D7547F8C029C71066 /* ReviewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B70BD5DC8EC2744085CD38 /* ReviewCoordinator.swift */; };
+		4C54EFB6D79859F9D124A2EE /* PaleoLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505C9DA9B2720E0C8F70E690 /* PaleoLetter.swift */; };
 		4CC010AE61E108EA94EC75E6 /* WhatsNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E624A72C001CF40FE54D5B98 /* WhatsNewView.swift */; };
+		4E3AC9C60BDB4C6784E56988 /* SILOAM.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 4B6570EE0B4FC8CF8C9DDE17 /* SILOAM.TTF */; };
+		5046ABC8A79819CA1E797760 /* YEB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = C28EAC6C4B7BBE7D4C375FE2 /* YEB.TTF */; };
 		542F0B65A27E89B889EAB314 /* HABAKKUK.TTF in Resources */ = {isa = PBXBuildFile; fileRef = FB7803ED78CD209B505E5665 /* HABAKKUK.TTF */; };
 		5A49D9692F18CF6737204685 /* SILOAM.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 4B6570EE0B4FC8CF8C9DDE17 /* SILOAM.TTF */; };
 		5D6CEA7E758A71ECACA22EB8 /* HABAKKUK.TTF in Resources */ = {isa = PBXBuildFile; fileRef = FB7803ED78CD209B505E5665 /* HABAKKUK.TTF */; };
 		5F229606840FC9A74D65F76B /* AVIIBCE.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 30953B009C50905446D32367 /* AVIIBCE.TTF */; };
 		636A0D25A20047C41E899B87 /* MakabiYG.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21304009F57DB1F5709AE62F /* MakabiYG.ttf */; };
+		6418AC3DBABE082B14776E69 /* PaleoLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505C9DA9B2720E0C8F70E690 /* PaleoLetter.swift */; };
 		64A992003D5219BBD9170033 /* MakabiYG.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21304009F57DB1F5709AE62F /* MakabiYG.ttf */; };
 		680FEEA7511158FF34AAA495 /* CULMUS-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5DBCC08D0E6DD8DB6AE39 /* CULMUS-LICENSE.txt */; };
+		6CECE02135A7BB7F205003C0 /* AppIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDAB7AD36AA3D8973B04732 /* AppIntents.swift */; };
+		72243D1F1EECC430BDC47F0C /* HABAKKUK.TTF in Resources */ = {isa = PBXBuildFile; fileRef = FB7803ED78CD209B505E5665 /* HABAKKUK.TTF */; };
 		73F43903012281DBF62BCC9C /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40D097014F0D4B8C8B4A814 /* Haptics.swift */; };
 		76AAAD791D4CE222A7484924 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BC71870EF3867D5E7FA5E6 /* Shared.swift */; };
+		7BF2F83FA22AE7C31FF59F6F /* ScribalFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110B3CE1B0AECD52FCA0C5E0 /* ScribalFonts.swift */; };
 		7C355B0E1235D766887D682B /* ISAIAH.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 7F04658E3BC5AF6355C73609 /* ISAIAH.TTF */; };
+		7DEB2ED612BC6185ECD2B36D /* PaleoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983C8400B4F1E4F9ECC59D7C /* PaleoWidget.swift */; };
+		81A2FE02F795F7B5D14A8611 /* SpotlightIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B385F7E37C4A1D7CA5BCE488 /* SpotlightIndex.swift */; };
 		82838358B298B1E46F44D9C4 /* QUMRAN.TTF in Resources */ = {isa = PBXBuildFile; fileRef = DD610E5A1B9C5EC2450F52E8 /* QUMRAN.TTF */; };
-		85DE5E96772AAF09ED99AD8A /* FakeAppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0C03F55D68643C15AF1BC6 /* FakeAppIcon.swift */; };
+		8338272F735B858A3B38CF04 /* QUMRAN.TTF in Resources */ = {isa = PBXBuildFile; fileRef = DD610E5A1B9C5EC2450F52E8 /* QUMRAN.TTF */; };
 		89AC19D792513713D9E89FF0 /* GlassToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54523021DC02CACE10C351C1 /* GlassToast.swift */; };
 		8D7EDF02D121336A7B8ECC45 /* ScribalFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110B3CE1B0AECD52FCA0C5E0 /* ScribalFonts.swift */; };
 		8EDEE796AD845F8D0A8E14D0 /* BR_RKB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 3C59A66C64647BBED48605EC /* BR_RKB.TTF */; };
@@ -42,21 +60,33 @@
 		916893D327BDF08B90EF4AAD /* ConversionHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF542A3F13BB92350396FB24 /* ConversionHistoryView.swift */; };
 		916A51331B724D7C9578A525 /* MESHA.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B3F9D04C8DA984918E37CE27 /* MESHA.TTF */; };
 		93E42FB49C48C061F8C5237E /* BETSHEAR.TTF in Resources */ = {isa = PBXBuildFile; fileRef = AB9A2CE93B1BBF49CED07947 /* BETSHEAR.TTF */; };
+		94A79B74D9B2E5EF0C95B4ED /* CULMUS-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5DBCC08D0E6DD8DB6AE39 /* CULMUS-LICENSE.txt */; };
 		9570C8CEA75EF22FD4B29BB8 /* KeyboardSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0670FB5263FCC1F6548F57B /* KeyboardSetupView.swift */; };
 		9793C12840FCCACB57D6ED81 /* Hebrew-Samaritan.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 675F80904DAD56CEAE803B64 /* Hebrew-Samaritan.ttf */; };
 		99AED4D5EDDB32B3734FA476 /* LACHISH.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 2EA50D74CF184D7C363BFF52 /* LACHISH.TTF */; };
 		99E0F05A0EF4DD39C62602A5 /* YEB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = C28EAC6C4B7BBE7D4C375FE2 /* YEB.TTF */; };
+		A082CF98367BB1483CA0D99F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD0B23AD0867D8321F2727B /* AppDelegate.swift */; };
+		A1DD1A6D67F390EB772FE031 /* PaleoProV2Widget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 49E9A88ABBCDBAAB00E7889D /* PaleoProV2Widget.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A7C1993E3E4DACCB6EF169B3 /* AHIRAM.TTF in Resources */ = {isa = PBXBuildFile; fileRef = A7BBF3E8659F639ED3C27E1E /* AHIRAM.TTF */; };
 		ABCFA4AF2B10E5952005FA9C /* YEB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = C28EAC6C4B7BBE7D4C375FE2 /* YEB.TTF */; };
 		AF133C710096A901372591E8 /* LetterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975628BF9803B5371F439519 /* LetterDetailView.swift */; };
 		B537A611DAA057A55F3CCA67 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFE6E24A62F37FF4C4714AA /* SettingsView.swift */; };
 		B7D63A85928FB27CFE73D430 /* PROTOCN.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B04137A175775CE577723903 /* PROTOCN.TTF */; };
+		B8E76E8898EA69AEA790B572 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA69A054C76B0330A1741C5 /* Notifications.swift */; };
+		B9F82D64061C72532081E018 /* PaleoProV2Share.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 354C780F3042935A0E51285D /* PaleoProV2Share.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BF864A4A9FE83205A7333B24 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF366E85DFA9DDA82957B351 /* DesignSystem.swift */; };
 		C02E4F9F2744FFB839A487CC /* AboutPaleoHebrewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A583CAF1D10FFE5A95FC41 /* AboutPaleoHebrewView.swift */; };
+		C18147F5832ABF5939237C2B /* AppNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48FCEB4F80B4A9180EEE2FB /* AppNavigation.swift */; };
+		C32EC67CBA27FFA74549BB55 /* BENKOSBA.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 853D143B3165F19DCA3A876D /* BENKOSBA.TTF */; };
 		C60544A530EC1B4F2C9DC524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AF8B11CAA2C365A02B7F98C /* Assets.xcassets */; };
 		C621B0A6517F4D47D79B0AB6 /* Hebrew-Samaritan.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 675F80904DAD56CEAE803B64 /* Hebrew-Samaritan.ttf */; };
+		CC3705EC44F37AE7BEB3A999 /* PROTOCN.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B04137A175775CE577723903 /* PROTOCN.TTF */; };
+		CD5377A2AD7FCAE1907CD59C /* MESHA.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B3F9D04C8DA984918E37CE27 /* MESHA.TTF */; };
 		CDE7DE0C04C5CF25528055A8 /* GEZER.TTF in Resources */ = {isa = PBXBuildFile; fileRef = FAF07BF39BCF1CE0A8571B6E /* GEZER.TTF */; };
+		D0C6A0300BEA4D664E5E6456 /* ISAIAH.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 7F04658E3BC5AF6355C73609 /* ISAIAH.TTF */; };
 		D10C4DF3A34D7EA55EF04778 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55F1279541AEED0F0F3747B /* HistoryView.swift */; };
 		D13F897DCB074B0EA69FA045 /* LearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A836F393DEA1542F7A839A2 /* LearnView.swift */; };
+		D2DC27D78427F2A34A60A700 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BC71870EF3867D5E7FA5E6 /* Shared.swift */; };
 		D387DBE84E0C94B9E4FB47CB /* ConvertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FE53EB48FF9D4C0FA39E67 /* ConvertView.swift */; };
 		DA3DF650FADA9A11B90AEF04 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EA4BDC68BF69C200836280 /* SummaryView.swift */; };
 		DBC87CF69EA32840CC2CB6A3 /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32626C8F4D1D0BD24F7B8F7 /* ConfettiView.swift */; };
@@ -65,7 +95,9 @@
 		E66E80CC9FF0C0F9E9221661 /* LACHISH.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 2EA50D74CF184D7C363BFF52 /* LACHISH.TTF */; };
 		E732A5FEDBD3BC8209BC37C0 /* QuizEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D777C31EFDC2083784D219 /* QuizEngine.swift */; };
 		ED0CB4FD24FE8B6137C8C9E9 /* CULMUS-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5DBCC08D0E6DD8DB6AE39 /* CULMUS-LICENSE.txt */; };
+		ED2814077F37004F82C3AE79 /* Hebrew-Samaritan.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 675F80904DAD56CEAE803B64 /* Hebrew-Samaritan.ttf */; };
 		F58F6EBC55A3C7343860DDEB /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A81D89CD644CE12E767E475 /* KeyboardViewController.swift */; };
+		F63EAB91153776AF3B849121 /* GEZER.TTF in Resources */ = {isa = PBXBuildFile; fileRef = FAF07BF39BCF1CE0A8571B6E /* GEZER.TTF */; };
 		F702AB1D680C9E10E87B626B /* AHIRAM.TTF in Resources */ = {isa = PBXBuildFile; fileRef = A7BBF3E8659F639ED3C27E1E /* AHIRAM.TTF */; };
 		F793C533A52E82F0EFD2E6AD /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE272D059EFEE7DFA13EDA0F /* CreditsView.swift */; };
 		F90500BB63BE7BF427A06627 /* AHIRAM.TTF in Resources */ = {isa = PBXBuildFile; fileRef = A7BBF3E8659F639ED3C27E1E /* AHIRAM.TTF */; };
@@ -74,6 +106,7 @@
 		FBA1017796799269B6A01AA2 /* QUMRAN.TTF in Resources */ = {isa = PBXBuildFile; fileRef = DD610E5A1B9C5EC2450F52E8 /* QUMRAN.TTF */; };
 		FF0E02D4637A53F3413AA1A0 /* BETSHEAR.TTF in Resources */ = {isa = PBXBuildFile; fileRef = AB9A2CE93B1BBF49CED07947 /* BETSHEAR.TTF */; };
 		FF0E5598706E12BC11FF5CCE /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F123AD1E53613D3BE35BFCE9 /* PlayView.swift */; };
+		FF7E705C3EDEA4C26FB6CF19 /* ConversionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB9F4E92E006AF53879C43C /* ConversionEngine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +116,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 077713A54D7C05741863B2A6;
 			remoteInfo = PaleoProV2Keyboard;
+		};
+		81EDE71D2A6FFA2E31B95AE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7181595F4F9EAD3CEBD9B825 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E26D69DD0B9C3B6E47E5CA64;
+			remoteInfo = PaleoProV2Widget;
+		};
+		A5F5F18ADCC5358AE9E4BDE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7181595F4F9EAD3CEBD9B825 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 815F8360FC27C1D3D183778B;
+			remoteInfo = PaleoProV2Share;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -94,6 +141,8 @@
 			dstSubfolderSpec = 13;
 			files = (
 				1DCF9BC071C7CE73374C5FAD /* PaleoProV2Keyboard.appex in Embed Foundation Extensions */,
+				A1DD1A6D67F390EB772FE031 /* PaleoProV2Widget.appex in Embed Foundation Extensions */,
+				B9F82D64061C72532081E018 /* PaleoProV2Share.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,36 +154,48 @@
 		110B3CE1B0AECD52FCA0C5E0 /* ScribalFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScribalFonts.swift; sourceTree = "<group>"; };
 		21304009F57DB1F5709AE62F /* MakabiYG.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MakabiYG.ttf; sourceTree = "<group>"; };
 		297517DD005A2F03CB110AD8 /* PaleoProV2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaleoProV2App.swift; sourceTree = "<group>"; };
-		2E0C03F55D68643C15AF1BC6 /* FakeAppIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeAppIcon.swift; sourceTree = "<group>"; };
 		2EA50D74CF184D7C363BFF52 /* LACHISH.TTF */ = {isa = PBXFileReference; path = LACHISH.TTF; sourceTree = "<group>"; };
 		30953B009C50905446D32367 /* AVIIBCE.TTF */ = {isa = PBXFileReference; path = AVIIBCE.TTF; sourceTree = "<group>"; };
+		354C780F3042935A0E51285D /* PaleoProV2Share.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = PaleoProV2Share.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF8B11CAA2C365A02B7F98C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C59A66C64647BBED48605EC /* BR_RKB.TTF */ = {isa = PBXFileReference; path = BR_RKB.TTF; sourceTree = "<group>"; };
+		3CDAB7AD36AA3D8973B04732 /* AppIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntents.swift; sourceTree = "<group>"; };
+		3E2149B1B70FADCD30C8D0FD /* SILOAM.TTF */ = {isa = PBXFileReference; path = SILOAM.TTF; sourceTree = "<group>"; };
+		49E9A88ABBCDBAAB00E7889D /* PaleoProV2Widget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = PaleoProV2Widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B6570EE0B4FC8CF8C9DDE17 /* SILOAM.TTF */ = {isa = PBXFileReference; path = SILOAM.TTF; sourceTree = "<group>"; };
 		505C9DA9B2720E0C8F70E690 /* PaleoLetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaleoLetter.swift; sourceTree = "<group>"; };
 		51A583CAF1D10FFE5A95FC41 /* AboutPaleoHebrewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPaleoHebrewView.swift; sourceTree = "<group>"; };
 		5201286C5B950E17EA006B5D /* PaleoFontPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaleoFontPickerView.swift; sourceTree = "<group>"; };
 		54523021DC02CACE10C351C1 /* GlassToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassToast.swift; sourceTree = "<group>"; };
 		5A836F393DEA1542F7A839A2 /* LearnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnView.swift; sourceTree = "<group>"; };
+		5BA69A054C76B0330A1741C5 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		675F80904DAD56CEAE803B64 /* Hebrew-Samaritan.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hebrew-Samaritan.ttf"; sourceTree = "<group>"; };
 		6EB9F4E92E006AF53879C43C /* ConversionEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionEngine.swift; sourceTree = "<group>"; };
 		73B70BD5DC8EC2744085CD38 /* ReviewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCoordinator.swift; sourceTree = "<group>"; };
+		74B33F9B65D5390AF9AB92E6 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		78D777C31EFDC2083784D219 /* QuizEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizEngine.swift; sourceTree = "<group>"; };
 		79EA4BDC68BF69C200836280 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
 		7A2D80ABBAB274F62F1C6119 /* PaleoProV2Keyboard.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = PaleoProV2Keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F04658E3BC5AF6355C73609 /* ISAIAH.TTF */ = {isa = PBXFileReference; path = ISAIAH.TTF; sourceTree = "<group>"; };
 		853D143B3165F19DCA3A876D /* BENKOSBA.TTF */ = {isa = PBXFileReference; path = BENKOSBA.TTF; sourceTree = "<group>"; };
 		8ED5DBCC08D0E6DD8DB6AE39 /* CULMUS-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "CULMUS-LICENSE.txt"; sourceTree = "<group>"; };
+		9711B027CC522A22E7D92ADB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		975628BF9803B5371F439519 /* LetterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterDetailView.swift; sourceTree = "<group>"; };
+		983C8400B4F1E4F9ECC59D7C /* PaleoWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaleoWidget.swift; sourceTree = "<group>"; };
 		9A81D89CD644CE12E767E475 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		9F7D30AF16B23701D8CB72A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A4FD6958E5D1BE18F9AEC759 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		A55F1279541AEED0F0F3747B /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		A7BBF3E8659F639ED3C27E1E /* AHIRAM.TTF */ = {isa = PBXFileReference; path = AHIRAM.TTF; sourceTree = "<group>"; };
 		A85AFB40D520C1337B86B461 /* PaleoProV2Keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PaleoProV2Keyboard.entitlements; sourceTree = "<group>"; };
 		AB9A2CE93B1BBF49CED07947 /* BETSHEAR.TTF */ = {isa = PBXFileReference; path = BETSHEAR.TTF; sourceTree = "<group>"; };
+		AC1689BB27DF73FDAE0FF466 /* LetterShareCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterShareCard.swift; sourceTree = "<group>"; };
+		AFD0B23AD0867D8321F2727B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B04137A175775CE577723903 /* PROTOCN.TTF */ = {isa = PBXFileReference; path = PROTOCN.TTF; sourceTree = "<group>"; };
 		B0F7DF2ABD77FC416DF065EA /* InteractiveBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveBackground.swift; sourceTree = "<group>"; };
+		B385F7E37C4A1D7CA5BCE488 /* SpotlightIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightIndex.swift; sourceTree = "<group>"; };
 		B3F9D04C8DA984918E37CE27 /* MESHA.TTF */ = {isa = PBXFileReference; path = MESHA.TTF; sourceTree = "<group>"; };
+		B48FCEB4F80B4A9180EEE2FB /* AppNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigation.swift; sourceTree = "<group>"; };
 		C0670FB5263FCC1F6548F57B /* KeyboardSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardSetupView.swift; sourceTree = "<group>"; };
 		C28EAC6C4B7BBE7D4C375FE2 /* YEB.TTF */ = {isa = PBXFileReference; path = YEB.TTF; sourceTree = "<group>"; };
 		C7BC71870EF3867D5E7FA5E6 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
@@ -149,6 +210,7 @@
 		E624A72C001CF40FE54D5B98 /* WhatsNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNewView.swift; sourceTree = "<group>"; };
 		EC72CC971B00E7F31A73B848 /* PaleoProV2.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = PaleoProV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF366E85DFA9DDA82957B351 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		EF3E0E261C54ED84B577AC37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EFFE6E24A62F37FF4C4714AA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		F123AD1E53613D3BE35BFCE9 /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
 		F2A2B51CF319FA29E0B3952D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -158,11 +220,23 @@
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		0178FD59707D270CAA4F0093 /* PaleoProV2Share */ = {
+			isa = PBXGroup;
+			children = (
+				EF3E0E261C54ED84B577AC37 /* Info.plist */,
+				74B33F9B65D5390AF9AB92E6 /* ShareViewController.swift */,
+				3E2149B1B70FADCD30C8D0FD /* SILOAM.TTF */,
+			);
+			path = PaleoProV2Share;
+			sourceTree = "<group>";
+		};
 		35FF5FC56A0A0C04C3E7F2F6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				EC72CC971B00E7F31A73B848 /* PaleoProV2.app */,
 				7A2D80ABBAB274F62F1C6119 /* PaleoProV2Keyboard.appex */,
+				354C780F3042935A0E51285D /* PaleoProV2Share.appex */,
+				49E9A88ABBCDBAAB00E7889D /* PaleoProV2Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -172,7 +246,6 @@
 			children = (
 				51A583CAF1D10FFE5A95FC41 /* AboutPaleoHebrewView.swift */,
 				DE272D059EFEE7DFA13EDA0F /* CreditsView.swift */,
-				2E0C03F55D68643C15AF1BC6 /* FakeAppIcon.swift */,
 				C0670FB5263FCC1F6548F57B /* KeyboardSetupView.swift */,
 				5201286C5B950E17EA006B5D /* PaleoFontPickerView.swift */,
 				EFFE6E24A62F37FF4C4714AA /* SettingsView.swift */,
@@ -241,6 +314,16 @@
 			path = Play;
 			sourceTree = "<group>";
 		};
+		A6C98472D1A741FCF8619869 /* PaleoProV2Widget */ = {
+			isa = PBXGroup;
+			children = (
+				9711B027CC522A22E7D92ADB /* Assets.xcassets */,
+				9F7D30AF16B23701D8CB72A5 /* Info.plist */,
+				983C8400B4F1E4F9ECC59D7C /* PaleoWidget.swift */,
+			);
+			path = PaleoProV2Widget;
+			sourceTree = "<group>";
+		};
 		AB5C3A77AF25832583DC7F73 /* Features */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,6 +351,7 @@
 			children = (
 				5A836F393DEA1542F7A839A2 /* LearnView.swift */,
 				975628BF9803B5371F439519 /* LetterDetailView.swift */,
+				AC1689BB27DF73FDAE0FF466 /* LetterShareCard.swift */,
 			);
 			path = Learn;
 			sourceTree = "<group>";
@@ -277,6 +361,8 @@
 			children = (
 				61638352AAE8E2B732630815 /* PaleoProV2 */,
 				B8A2ECC7641BFA2086B9F47F /* PaleoProV2Keyboard */,
+				0178FD59707D270CAA4F0093 /* PaleoProV2Share */,
+				A6C98472D1A741FCF8619869 /* PaleoProV2Widget */,
 				35FF5FC56A0A0C04C3E7F2F6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -284,14 +370,19 @@
 		E972DC92B71719DBFCD36E6E /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				AFD0B23AD0867D8321F2727B /* AppDelegate.swift */,
+				3CDAB7AD36AA3D8973B04732 /* AppIntents.swift */,
+				B48FCEB4F80B4A9180EEE2FB /* AppNavigation.swift */,
 				D79F9B29B5A42C60ED64A9CD /* Clipboard.swift */,
 				EF366E85DFA9DDA82957B351 /* DesignSystem.swift */,
 				D40D097014F0D4B8C8B4A814 /* Haptics.swift */,
+				5BA69A054C76B0330A1741C5 /* Notifications.swift */,
 				505C9DA9B2720E0C8F70E690 /* PaleoLetter.swift */,
 				D3C6237C0532B3A2110B9D65 /* PersistenceModels.swift */,
 				73B70BD5DC8EC2744085CD38 /* ReviewCoordinator.swift */,
 				110B3CE1B0AECD52FCA0C5E0 /* ScribalFonts.swift */,
 				C7BC71870EF3867D5E7FA5E6 /* Shared.swift */,
+				B385F7E37C4A1D7CA5BCE488 /* SpotlightIndex.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -339,6 +430,8 @@
 			);
 			dependencies = (
 				312D985AD16B909DB181CAF5 /* PBXTargetDependency */,
+				FB2A2DC22A95D35D5155D063 /* PBXTargetDependency */,
+				17E79421C881975D4E73225D /* PBXTargetDependency */,
 			);
 			name = PaleoProV2;
 			packageProductDependencies = (
@@ -346,6 +439,42 @@
 			productName = PaleoProV2;
 			productReference = EC72CC971B00E7F31A73B848 /* PaleoProV2.app */;
 			productType = "com.apple.product-type.application";
+		};
+		815F8360FC27C1D3D183778B /* PaleoProV2Share */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E19D9241310DBFCE3E607B08 /* Build configuration list for PBXNativeTarget "PaleoProV2Share" */;
+			buildPhases = (
+				AE9CC1559C7335E3138004F3 /* Sources */,
+				72AF1CD9029B1F0C29110374 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaleoProV2Share;
+			packageProductDependencies = (
+			);
+			productName = PaleoProV2Share;
+			productReference = 354C780F3042935A0E51285D /* PaleoProV2Share.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E26D69DD0B9C3B6E47E5CA64 /* PaleoProV2Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B7664B1921EBA3CE3F06964 /* Build configuration list for PBXNativeTarget "PaleoProV2Widget" */;
+			buildPhases = (
+				8C8CDBBAD3E9179A86D6BD31 /* Sources */,
+				5D5B46A08726BED0652455F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaleoProV2Widget;
+			packageProductDependencies = (
+			);
+			productName = PaleoProV2Widget;
+			productReference = 49E9A88ABBCDBAAB00E7889D /* PaleoProV2Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -360,6 +489,12 @@
 						DevelopmentTeam = 444XUVT54V;
 					};
 					3F46017B187FA4ED37F71DA9 = {
+						DevelopmentTeam = 444XUVT54V;
+					};
+					815F8360FC27C1D3D183778B = {
+						DevelopmentTeam = 444XUVT54V;
+					};
+					E26D69DD0B9C3B6E47E5CA64 = {
 						DevelopmentTeam = 444XUVT54V;
 					};
 				};
@@ -380,6 +515,8 @@
 			targets = (
 				3F46017B187FA4ED37F71DA9 /* PaleoProV2 */,
 				077713A54D7C05741863B2A6 /* PaleoProV2Keyboard */,
+				815F8360FC27C1D3D183778B /* PaleoProV2Share */,
+				E26D69DD0B9C3B6E47E5CA64 /* PaleoProV2Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -406,6 +543,39 @@
 				FBA1017796799269B6A01AA2 /* QUMRAN.TTF in Resources */,
 				28073E018B79D88BBAEE899C /* SILOAM.TTF in Resources */,
 				ABCFA4AF2B10E5952005FA9C /* YEB.TTF in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D5B46A08726BED0652455F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7C1993E3E4DACCB6EF169B3 /* AHIRAM.TTF in Resources */,
+				3F058B94209C42E1A8610068 /* AVIIBCE.TTF in Resources */,
+				2B96D5F08F75072AA6B3BE11 /* Assets.xcassets in Resources */,
+				C32EC67CBA27FFA74549BB55 /* BENKOSBA.TTF in Resources */,
+				100588DC7DEB56AE324D95F7 /* BETSHEAR.TTF in Resources */,
+				40AC266E10380B401EA24D7A /* BR_RKB.TTF in Resources */,
+				94A79B74D9B2E5EF0C95B4ED /* CULMUS-LICENSE.txt in Resources */,
+				F63EAB91153776AF3B849121 /* GEZER.TTF in Resources */,
+				72243D1F1EECC430BDC47F0C /* HABAKKUK.TTF in Resources */,
+				ED2814077F37004F82C3AE79 /* Hebrew-Samaritan.ttf in Resources */,
+				D0C6A0300BEA4D664E5E6456 /* ISAIAH.TTF in Resources */,
+				4897A6C642479DB968F433FD /* LACHISH.TTF in Resources */,
+				CD5377A2AD7FCAE1907CD59C /* MESHA.TTF in Resources */,
+				0CC92B9AC3A5CEF755471999 /* MakabiYG.ttf in Resources */,
+				CC3705EC44F37AE7BEB3A999 /* PROTOCN.TTF in Resources */,
+				8338272F735B858A3B38CF04 /* QUMRAN.TTF in Resources */,
+				4E3AC9C60BDB4C6784E56988 /* SILOAM.TTF in Resources */,
+				5046ABC8A79819CA1E797760 /* YEB.TTF in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72AF1CD9029B1F0C29110374 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29FC1E25E026285D02AB40E3 /* SILOAM.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,11 +616,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8C8CDBBAD3E9179A86D6BD31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C54EFB6D79859F9D124A2EE /* PaleoLetter.swift in Sources */,
+				7DEB2ED612BC6185ECD2B36D /* PaleoWidget.swift in Sources */,
+				7BF2F83FA22AE7C31FF59F6F /* ScribalFonts.swift in Sources */,
+				D2DC27D78427F2A34A60A700 /* Shared.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE9CC1559C7335E3138004F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF7E705C3EDEA4C26FB6CF19 /* ConversionEngine.swift in Sources */,
+				6418AC3DBABE082B14776E69 /* PaleoLetter.swift in Sources */,
+				2BD4A13E08C50D0339CB659A /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EA7DD5D09A2C2FE63A5799E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C02E4F9F2744FFB839A487CC /* AboutPaleoHebrewView.swift in Sources */,
+				A082CF98367BB1483CA0D99F /* AppDelegate.swift in Sources */,
+				6CECE02135A7BB7F205003C0 /* AppIntents.swift in Sources */,
+				C18147F5832ABF5939237C2B /* AppNavigation.swift in Sources */,
 				41A4F69C02F6B2336F7B22FA /* Clipboard.swift in Sources */,
 				DBC87CF69EA32840CC2CB6A3 /* ConfettiView.swift in Sources */,
 				E54DDF49B924AF1999D9376D /* ConversionEngine.swift in Sources */,
@@ -458,7 +652,6 @@
 				D387DBE84E0C94B9E4FB47CB /* ConvertView.swift in Sources */,
 				F793C533A52E82F0EFD2E6AD /* CreditsView.swift in Sources */,
 				BF864A4A9FE83205A7333B24 /* DesignSystem.swift in Sources */,
-				85DE5E96772AAF09ED99AD8A /* FakeAppIcon.swift in Sources */,
 				89AC19D792513713D9E89FF0 /* GlassToast.swift in Sources */,
 				73F43903012281DBF62BCC9C /* Haptics.swift in Sources */,
 				D10C4DF3A34D7EA55EF04778 /* HistoryView.swift in Sources */,
@@ -466,6 +659,8 @@
 				9570C8CEA75EF22FD4B29BB8 /* KeyboardSetupView.swift in Sources */,
 				D13F897DCB074B0EA69FA045 /* LearnView.swift in Sources */,
 				AF133C710096A901372591E8 /* LetterDetailView.swift in Sources */,
+				2AA5E6C760ACFB94089CC34C /* LetterShareCard.swift in Sources */,
+				B8E76E8898EA69AEA790B572 /* Notifications.swift in Sources */,
 				30B3E03437EAEB0A9DDB115A /* PaleoFontPickerView.swift in Sources */,
 				1BB401236D979F08E4AC3402 /* PaleoLetter.swift in Sources */,
 				15E6A29EF063AC5481DC23AF /* PaleoProV2App.swift in Sources */,
@@ -477,6 +672,7 @@
 				8D7EDF02D121336A7B8ECC45 /* ScribalFonts.swift in Sources */,
 				B537A611DAA057A55F3CCA67 /* SettingsView.swift in Sources */,
 				76AAAD791D4CE222A7484924 /* Shared.swift in Sources */,
+				81A2FE02F795F7B5D14A8611 /* SpotlightIndex.swift in Sources */,
 				DA3DF650FADA9A11B90AEF04 /* SummaryView.swift in Sources */,
 				4CC010AE61E108EA94EC75E6 /* WhatsNewView.swift in Sources */,
 			);
@@ -485,11 +681,23 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		17E79421C881975D4E73225D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 815F8360FC27C1D3D183778B /* PaleoProV2Share */;
+			targetProxy = A5F5F18ADCC5358AE9E4BDE5 /* PBXContainerItemProxy */;
+		};
 		312D985AD16B909DB181CAF5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			platformFilter = ios;
 			target = 077713A54D7C05741863B2A6 /* PaleoProV2Keyboard */;
 			targetProxy = 65B0BAA42E1BC60CEB6D5DAF /* PBXContainerItemProxy */;
+		};
+		FB2A2DC22A95D35D5155D063 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = E26D69DD0B9C3B6E47E5CA64 /* PaleoProV2Widget */;
+			targetProxy = 81EDE71D2A6FFA2E31B95AE2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -543,7 +751,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -682,7 +890,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -692,6 +900,41 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B43A2A60D0B6BE3DBD9F2BD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PaleoProV2Share/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = d7mtg.PaleoHebrew.Share;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B7EA49869EEBF933161F8964 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PaleoProV2Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = d7mtg.PaleoHebrew.Widget;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -712,6 +955,41 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
+		};
+		E14F21C87115AD2A8C6DFF9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PaleoProV2Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = d7mtg.PaleoHebrew.Widget;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FAA9D04CBF582456FC935520 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PaleoProV2Share/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = d7mtg.PaleoHebrew.Share;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -734,11 +1012,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
+		2B7664B1921EBA3CE3F06964 /* Build configuration list for PBXNativeTarget "PaleoProV2Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7EA49869EEBF933161F8964 /* Debug */,
+				E14F21C87115AD2A8C6DFF9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		91523B9BCF3F864763E946C7 /* Build configuration list for PBXNativeTarget "PaleoProV2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5BA891AE00447ED475CBBC31 /* Debug */,
 				8D9A7FFEB848E27252DB03E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E19D9241310DBFCE3E607B08 /* Build configuration list for PBXNativeTarget "PaleoProV2Share" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B43A2A60D0B6BE3DBD9F2BD3 /* Debug */,
+				FAA9D04CBF582456FC935520 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

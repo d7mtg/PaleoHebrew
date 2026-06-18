@@ -33,8 +33,11 @@ struct SettingsView: View {
     private var headerSection: some View {
         Section {
             VStack(spacing: Spacing.md) {
-                FakeAppIcon()
+                Image("BrandIcon")
+                    .resizable()
+                    .scaledToFit()
                     .frame(width: 92, height: 92)
+                    .shadow(color: .black.opacity(0.18), radius: 10, y: 5)
 
                 VStack(spacing: 2) {
                     Text("Paleo Pro")
@@ -141,6 +144,11 @@ struct SettingsView: View {
             #endif
             LabeledContent("App Group", value: Shared.appGroup)
             LabeledContent("Keyboard", value: keyboardReady ? "Set up" : "Not set up")
+            #if DEBUG
+            Button("Show What's New") {
+                AppNavigation.shared.whatsNewToken += 1
+            }
+            #endif
             Button("Hide Debug Info") {
                 withAnimation(Motion.smooth) { showDebug = false }
             }
@@ -156,7 +164,7 @@ struct SettingsView: View {
             VStack(spacing: 4) {
                 Link("Designed by D7mtg", destination: URL(string: "https://d7mtg.com")!)
                     .font(.footnote.weight(.medium))
-                Text("Version 2.0")
+                Text("Version \(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "2.1")")
                     .font(.caption)
                     .foregroundStyle(.tertiary)
                     .onLongPressGesture(minimumDuration: 1.2) {

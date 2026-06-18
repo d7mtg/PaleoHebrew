@@ -1,4 +1,7 @@
 import SwiftUI
+#if canImport(UIKit)
+import UIKit
+#endif
 
 /// Bottom sheet shown when a letter is tapped in Learn. Modern + Paleo big at
 /// the top, a quick copy, and a "Through the ages" timeline. Swipe left/right
@@ -8,8 +11,11 @@ struct LetterSheet: View {
 
     @State private var index: Int
     @State private var toast: ToastState?
+    @State private var shareImage: UIImage?
+    @State private var shareFile: URL?
     @AppStorage("learn.timelineShowAll") private var showAll = false
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.colorScheme) private var colorScheme
 
     init(start: PaleoLetter) {
         self.start = start
@@ -53,17 +59,73 @@ struct LetterSheet: View {
                 .onChange(of: index) { _, _ in Haptics.select() }
 
                 HStack {
-                    arrow("chevron.left") { step(-1) }
+                    arrow("chevron.left", label: "Previous letter") { step(-1) }
                     Spacer()
-                    arrow("chevron.right") { step(1) }
+                    arrow("chevron.right", label: "Next letter") { step(1) }
                 }
             }
 
-            copyButton
+            HStack(spacing: Spacing.md) {
+                shareButton
+                copyButton
+            }
         }
         .padding(.horizontal, Spacing.lg)
         .padding(.top, Spacing.lg)
         .padding(.bottom, Spacing.md)
+        // Render the shareable card for the current letter, but only once the
+        // user settles on it. The debounce means swiping through letters does
+        // not fire a heavy main-thread render per letter (that was the stutter).
+        .task(id: index) {
+            shareImage = nil; shareFile = nil
+            try? await Task.sleep(for: .seconds(0.35))
+            guard !Task.isCancelled else { return }
+            prepareShare(scheme: colorScheme)
+        }
+        .onChange(of: colorScheme) { _, s in prepareShare(scheme: s) }
+    }
+
+    @ViewBuilder
+    private var shareButton: some View {
+        Group {
+            if let url = shareFile, let img = shareImage {
+                // Share the rendered card as a real PNG file (proper filename,
+                // and the system offers Save to Photos), with the App Store
+                // link riding along as the message text.
+                ShareLink(
+                    item: url,
+                    message: Text("Learn the ancient Hebrew alphabet with Paleo Pro: \(Self.appStoreURL)"),
+                    preview: SharePreview("Paleo Pro · \(letter.name)", image: Image(uiImage: img))
+                ) {
+                    Label("Share", systemImage: "square.and.arrow.up").frame(maxWidth: .infinity)
+                }
+            } else {
+                ShareLink(item: letter.paleo) {
+                    Label("Share", systemImage: "square.and.arrow.up").frame(maxWidth: .infinity)
+                }
+            }
+        }
+        .buttonStyle(.glass)
+        .controlSize(.large)
+    }
+
+    private static let appStoreURL = "https://apps.apple.com/app/id6743683727"
+
+    /// Render the card and write it to a temp PNG named for the letter, so the
+    /// share sheet shows "Paleo Pro - Bet.png" instead of a hidden NSItemProvider
+    /// file, and offers Save to Photos.
+    private func prepareShare(scheme: ColorScheme) {
+        guard let img = LetterShareCard.render(letter: letter, scheme: scheme) else {
+            shareImage = nil; shareFile = nil; return
+        }
+        shareImage = img
+        let safeName = letter.name.replacingOccurrences(of: "/", with: "-")
+        let url = FileManager.default.temporaryDirectory.appending(path: "Paleo Pro - \(safeName).png")
+        if let data = img.pngData(), (try? data.write(to: url)) != nil {
+            shareFile = url
+        } else {
+            shareFile = nil
+        }
     }
 
     private func pairing(_ l: PaleoLetter) -> some View {
@@ -79,9 +141,12 @@ struct LetterSheet: View {
                 .font(.headline)
                 .foregroundStyle(.secondary)
         }
+        // One spoken element for VoiceOver instead of two bare glyphs.
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("\(l.name). Paleo-Hebrew and modern \(l.modern).")
     }
 
-    private func arrow(_ symbol: String, action: @escaping () -> Void) -> some View {
+    private func arrow(_ symbol: String, label: String, action: @escaping () -> Void) -> some View {
         Button(action: action) {
             Image(systemName: symbol)
                 .font(.title3.weight(.semibold))
@@ -90,6 +155,7 @@ struct LetterSheet: View {
                 .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
+        .accessibilityLabel(label)
     }
 
     private var copyButton: some View {
@@ -216,6 +282,7 @@ private struct TimelineRow: View {
                 .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
+        .accessibilityLabel("About \(title)")
         .popover(isPresented: $showInfo, arrowEdge: .trailing) {
             VStack(alignment: .leading, spacing: Spacing.sm) {
                 Text(title).font(.headline)

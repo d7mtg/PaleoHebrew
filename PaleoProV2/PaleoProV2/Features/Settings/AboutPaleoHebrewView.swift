@@ -104,6 +104,7 @@ struct AboutPaleoHebrewView: View {
                 .foregroundStyle(.tint)
                 .minimumScaleFactor(0.5)
                 .lineLimit(1)
+                .accessibilityHidden(true) // decorative; the title below names it
             Text("About Paleo-Hebrew")
                 .font(.largeTitle.weight(.bold))
                 .multilineTextAlignment(.center)
@@ -237,6 +238,8 @@ struct AboutPaleoHebrewView: View {
                                 .frame(maxWidth: .infinity)
                         }
                         .buttonStyle(.plain)
+                        .accessibilityLabel(caption)
+                        .accessibilityHint("Double tap to zoom")
                     } else {
                         RoundedRectangle(cornerRadius: Radius.card, style: .continuous)
                             .fill(Color.cardFill)
@@ -270,6 +273,7 @@ struct AboutPaleoHebrewView: View {
                 .font(.footnote)
                 .foregroundStyle(.secondary)
                 .frame(maxWidth: .infinity, alignment: .leading)
+                .accessibilityHidden(true) // already announced by the image button above
         }
         .padding(.vertical, Spacing.xs)
     }
@@ -301,6 +305,7 @@ struct AboutPaleoHebrewView: View {
                     .font(.system(size: 30))
                     .textSelection(.enabled)
                     .environment(\.layoutDirection, .rightToLeft)
+                    .accessibilityLabel("The twenty-two Paleo-Hebrew letters, Aleph through Tav")
             }
         }
         .padding(.vertical, Spacing.xs)
@@ -373,6 +378,7 @@ private struct GlossarySheet: View {
                         .foregroundStyle(.secondary)
                 }
                 .buttonStyle(.plain)
+                .accessibilityLabel("Close")
             }
             Text(entry.definition)
                 .font(.body)
@@ -467,6 +473,7 @@ private struct ZoomableImageView: View {
                             .padding(12)
                             .background(.ultraThinMaterial, in: .circle)
                     }
+                    .accessibilityLabel("Close")
                     .padding()
                 }
                 Spacer()

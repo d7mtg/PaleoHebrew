@@ -4,6 +4,13 @@ import SwiftUI
 /// ZStack; `matchedGeometryEffect` ties each letter's grid tile to its list row
 /// so SwiftUI interpolates frame + position when the toggle flips.
 struct LearnView: View {
+    /// Set by an external entry point (Spotlight deep link) to open a letter.
+    @Binding var letterToOpen: PaleoLetter?
+
+    init(letterToOpen: Binding<PaleoLetter?> = .constant(nil)) {
+        self._letterToOpen = letterToOpen
+    }
+
     @AppStorage("learn.isGrid") private var isGrid = true
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @State private var toast: ToastState?
@@ -60,11 +67,25 @@ struct LearnView: View {
                     .presentationDragIndicator(.visible)
                     .presentationBackground(.regularMaterial)
             }
+#if DEBUG
             .task {
                 // Debug-only: PREVIEW_LETTER=<name> auto-opens the sheet for screenshots.
                 if let name = ProcessInfo.processInfo.environment["PREVIEW_LETTER"],
                    let l = Alphabet.letters.first(where: { $0.name.lowercased() == name.lowercased() }) {
                     sheetLetter = l
+                }
+            }
+#endif
+            // External deep link (Spotlight) requested a specific letter.
+            .onChange(of: letterToOpen) { _, new in
+                guard let new else { return }
+                sheetLetter = new
+                letterToOpen = nil
+            }
+            .onAppear {
+                if let pending = letterToOpen {
+                    sheetLetter = pending
+                    letterToOpen = nil
                 }
             }
         }

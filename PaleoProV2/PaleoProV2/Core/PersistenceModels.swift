@@ -33,10 +33,12 @@ final class QuizRecord {
     var percent: Double { total > 0 ? Double(score) / Double(total) : 0 }
 }
 
-/// Cumulative mastery for one letter pair, keyed uniquely so upserts are cheap.
+/// Cumulative mastery for one letter pair. `pairKey` identifies the pair and the
+/// upsert (in SummaryView) fetches by it before inserting. No `.unique`
+/// constraint: CloudKit sync does not support unique attributes.
 @Model
 final class LetterStat {
-    @Attribute(.unique) var pairKey: String = ""
+    var pairKey: String = ""
     var name: String = ""
     var correct: Int = 0
     var total: Int = 0
@@ -72,11 +74,29 @@ final class ConversionRecord {
 enum Persistence {
     static func makeContainer(inMemory: Bool = false) -> ModelContainer {
         let schema = Schema([QuizRecord.self, LetterStat.self, ConversionRecord.self])
-        let config = ModelConfiguration(schema: schema, isStoredInMemoryOnly: inMemory)
-        do {
-            return try ModelContainer(for: schema, configurations: [config])
-        } catch {
-            fatalError("Unable to create ModelContainer: \(error)")
+
+        func build(_ config: ModelConfiguration) -> ModelContainer? {
+            try? ModelContainer(for: schema, configurations: [config])
         }
+
+        // groupContainer MUST be .none. With the default .automatic, SwiftData
+        // relocates the store into the App Group container (the app has that
+        // entitlement for the keyboard/widget); on device its Application
+        // Support dir doesn't exist and the sandbox denies creating it, so the
+        // store fails on launch and the watchdog kills the app.
+        if inMemory {
+            if let c = build(.init(schema: schema, isStoredInMemoryOnly: true, groupContainer: .none)) { return c }
+            fatalError("Unable to create in-memory ModelContainer")
+        }
+
+        // Prefer a CloudKit-backed store so quiz progress and conversion history
+        // sync across the user's devices. If iCloud isn't provisioned/available
+        // (e.g. the capability hasn't been enabled, or the user isn't signed in),
+        // fall back to a purely local store so the app always launches. To turn
+        // sync on, add the iCloud + CloudKit capability with the container
+        // iCloud.d7mtg.PaleoHebrew in Xcode's Signing & Capabilities.
+        if let c = build(.init(schema: schema, groupContainer: .none, cloudKitDatabase: .automatic)) { return c }
+        if let c = build(.init(schema: schema, groupContainer: .none, cloudKitDatabase: .none)) { return c }
+        fatalError("Unable to create ModelContainer")
     }
 }

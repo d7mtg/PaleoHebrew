@@ -1,63 +1,70 @@
 import SwiftUI
 
-/// Apple-style "What's New" welcome screen: app mark, a short feature list with
-/// SF Symbols, and a single prominent Continue button.
-///
-/// NOTE: currently shown on every launch for review. Before release, gate it to
-/// first-launch-per-version via the `whatsNewSeenVersion` flag below.
+/// "What's New" welcome screen, modeled on Apple's recent style (Freeform): the
+/// real app icon centered on top, a left-aligned title above a short feature
+/// list, and a concentric Continue button. Presented as a dismissible sheet by
+/// `RootView`, shown once per app version.
 struct WhatsNewView: View {
     var onContinue: () -> Void
     @State private var appeared = false
 
+    // Three themes covering the whole journey since 1.0: the visual rebuild,
+    // the per-letter depth, and how the app now lives across iOS.
     private let features: [Feature] = [
         .init(symbol: "sparkles", title: "A New Look",
-              detail: "Rebuilt for iOS 26 with Liquid Glass across every screen."),
-        .init(symbol: "keyboard", title: "Redesigned Keyboard",
-              detail: "Taller keys, dual-script labels, and instant feedback."),
-        .init(symbol: "gamecontroller", title: "Learn and Play",
-              detail: "Browse all 22 letters, then test yourself with a quick quiz."),
-        .init(symbol: "scroll", title: "A Richer Story",
-              detail: "Real inscriptions you can zoom into, copy, and explore."),
+              detail: "Rebuilt for iOS 26 with Liquid Glass, plus a redesigned Paleo Hebrew keyboard."),
+        .init(symbol: "book.pages", title: "A Page for Every Letter",
+              detail: "All 22 letters, each with its own page tracing how it became modern Hebrew, ready to share as a card."),
+        .init(symbol: "apps.iphone", title: "At Home on iOS",
+              detail: "Widgets, Shortcuts, Siri, Spotlight, Handoff, and iCloud sync across your devices."),
     ]
 
+    private var appVersion: String {
+        Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "2.1"
+    }
+
     var body: some View {
-        VStack(spacing: 0) {
+        VStack(alignment: .leading, spacing: 0) {
+            // Top space, so the whole section sits lower with room above the icon.
             Spacer(minLength: Spacing.xl)
 
-            VStack(spacing: Spacing.md) {
-                Image("AppIconMark")
-                    .renderingMode(.template)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 76, height: 58)
-                    .foregroundStyle(.tint)
+            // The real app icon, centered, with room above and below it.
+            Image("BrandIcon")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 92, height: 92)
+                .shadow(color: .black.opacity(0.18), radius: 10, y: 5)
+                .frame(maxWidth: .infinity)
+                .padding(.top, Spacing.lg)
 
-                VStack(spacing: 4) {
-                    Text("What's New in")
-                        .font(.largeTitle.weight(.bold))
-                    Text("Paleo Pro")
-                        .font(.largeTitle.weight(.bold))
-                        .foregroundStyle(.tint)
-                }
-                .multilineTextAlignment(.center)
+            // Left-aligned title; both lines the same size, left edge aligned to
+            // the feature icons. Generous gap below the icon.
+            VStack(alignment: .leading, spacing: 0) {
+                Text("What's New in")
+                    .font(.title.weight(.bold))
+                Text("Paleo Pro \(appVersion)")
+                    .font(.title.weight(.bold))
+                    .foregroundStyle(.tint)
             }
+            .padding(.top, 36)
             .opacity(appeared ? 1 : 0)
             .offset(y: appeared ? 0 : 10)
 
-            Spacer(minLength: Spacing.xl)
-
             VStack(alignment: .leading, spacing: Spacing.xl) {
                 ForEach(Array(features.enumerated()), id: \.element.id) { index, feature in
-                    FeatureRow(feature: feature)
-                        .opacity(appeared ? 1 : 0)
-                        .offset(y: appeared ? 0 : 14)
-                        .animation(.smooth(duration: 0.5).delay(0.15 + Double(index) * 0.08), value: appeared)
+                    FeatureRow(feature: feature, index: index)
                 }
             }
-            .padding(.horizontal, Spacing.sm)
+            .padding(.top, Spacing.xl)
 
             Spacer(minLength: Spacing.xl)
-
+        }
+        .padding(.horizontal, Spacing.xl)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.appBackground.ignoresSafeArea())
+        // Let iOS pin and position the Continue button in the bottom safe area;
+        // it stays correct above the home indicator on every device size.
+        .safeAreaInset(edge: .bottom) {
             Button {
                 Haptics.impact(.light)
                 onContinue()
@@ -70,11 +77,9 @@ struct WhatsNewView: View {
             .controlSize(.extraLarge)
             .foregroundStyle(Color.onAccent)
             .opacity(appeared ? 1 : 0)
+            .padding(.horizontal, Spacing.xl)
+            .padding(.top, Spacing.sm)
         }
-        .padding(.horizontal, Spacing.xl)
-        .padding(.bottom, Spacing.xl)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.appBackground.ignoresSafeArea())
         .task {
             withAnimation(.smooth(duration: 0.5)) { appeared = true }
         }
@@ -90,23 +95,35 @@ struct WhatsNewView: View {
 
 private struct FeatureRow: View {
     let feature: WhatsNewView.Feature
+    var index: Int = 0
+    @State private var shown = false
 
     var body: some View {
-        HStack(alignment: .top, spacing: Spacing.lg) {
+        HStack(alignment: .top, spacing: Spacing.md) {
             Image(systemName: feature.symbol)
                 .font(.title2)
+                .symbolRenderingMode(.monochrome) // solid teal, not two-tone
                 .foregroundStyle(.tint)
-                .frame(width: 40, height: 40)
-                .symbolRenderingMode(.hierarchical)
-            VStack(alignment: .leading, spacing: 3) {
+                .frame(width: 38, height: 38)
+            VStack(alignment: .leading, spacing: 2) {
+                // Title and detail are the same size; the difference is color.
                 Text(feature.title)
-                    .font(.headline)
+                    .font(.subheadline.weight(.semibold))
                 Text(feature.detail)
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
                     .fixedSize(horizontal: false, vertical: true)
             }
             Spacer(minLength: 0)
+        }
+        // Simple fade-and-rise reveal. (No symbol draw effect: it left the
+        // icons undrawn/invisible on device for symbols without draw support.)
+        .opacity(shown ? 1 : 0)
+        .offset(y: shown ? 0 : 8)
+        .animation(.smooth(duration: 0.4), value: shown)
+        .task {
+            try? await Task.sleep(for: .seconds(0.12 + Double(index) * 0.12))
+            shown = true
         }
     }
 }

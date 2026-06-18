@@ -1,9 +1,9 @@
 import SwiftUI
 
 struct PlayView: View {
+    var quizToken: Int = 0
     @State private var engine = QuizEngine()
     @State private var showHistory = false
-    @Environment(\.newQuizTrigger) private var newQuizTrigger
 
     var body: some View {
         ZStack {
@@ -29,8 +29,8 @@ struct PlayView: View {
                 .presentationDragIndicator(.visible)
                 .presentationBackground(.regularMaterial)
         }
-        // Mac File → New Quiz starts a fresh quiz from any state.
-        .onChange(of: newQuizTrigger) { _, _ in engine.start() }
+        // New Quiz (menu / App Intent / Siri) starts a fresh quiz from any state.
+        .onChange(of: quizToken) { _, _ in engine.start() }
     }
 }
 

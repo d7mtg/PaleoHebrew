@@ -11,6 +11,7 @@ struct ConvertView: View {
     @AppStorage(PaleoFontPreference.key, store: PaleoFontPreference.store) private var fontID = ""
 
     @Environment(\.modelContext) private var context
+    @State private var nav = AppNavigation.shared
     @State private var input = ""
     @State private var toast: ToastState?
     @State private var swapRotation = 0.0
@@ -39,12 +40,12 @@ struct ConvertView: View {
         if useScribal, let f = scribalFont { return .custom(f.postScriptName, size: 30) }
         return .system(size: 30)
     }
-    /// The input field follows the chosen letterform too (the Culmus fonts are
-    /// keyed on Hebrew letters, so typed Hebrew shows in that ancient hand).
-    private var inputFont: Font {
-        if let f = scribalFont { return .custom(f.postScriptName, size: 30) }
-        return .system(size: 30)
-    }
+    /// The input renders in a normal font so it shows the script you are
+    /// actually typing: modern Hebrew when converting Modern to Paleo, Paleo
+    /// when converting back. (Applying the ancient hand here made the modern
+    /// input and its placeholder look like Paleo, which was confusing.) The
+    /// chosen letterform still styles the output and the rest of the app.
+    private var inputFont: Font { .system(size: 30) }
 
     private var output: String {
         ConversionEngine.convert(
@@ -109,6 +110,19 @@ struct ConvertView: View {
             }
             .toast($toast)
             .task(id: autosaveKey) { await autosave() }
+            // Handoff: advertise the current conversion to the user's other devices.
+            .userActivity(AppNavigation.convertActivityType, isActive: !input.isEmpty) { activity in
+                activity.title = "Convert in Paleo Pro"
+                activity.isEligibleForHandoff = true
+                activity.userInfo = ["text": input, "m2p": modernToPaleo]
+            }
+            .onChange(of: nav.convertToken) { _, _ in
+                guard let t = nav.pendingConvertText else { return }
+                suppressAutosave = true
+                modernToPaleo = nav.pendingConvertModernToPaleo
+                input = t
+                nav.pendingConvertText = nil
+            }
             .sheet(isPresented: $showHistory) {
                 ConversionHistoryView { source, direction in
                     suppressAutosave = true      // loading an old entry shouldn't re-save it
@@ -208,6 +222,13 @@ struct ConvertView: View {
                     .foregroundStyle(.tint)
                 Spacer()
                 if !output.isEmpty {
+                    ShareLink(item: output) {
+                        Image(systemName: "square.and.arrow.up")
+                            .font(.subheadline.weight(.semibold))
+                    }
+                    .buttonStyle(.glass)
+                    .controlSize(.small)
+                    .accessibilityLabel("Share")
                     Button { copy() } label: {
                         Label("Copy", systemImage: "doc.on.doc")
                             .labelStyle(.titleAndIcon)

@@ -10,8 +10,8 @@ options:
 settings:
   base:
     SWIFT_VERSION: "5.0"
-    # Bumped from V1 (last shipped 1.2) — this is the major rewrite.
-    MARKETING_VERSION: "2.0"
+    # 2.0 was the major rewrite (already on the App Store); 2.1 is this update.
+    MARKETING_VERSION: "2.1"
     CURRENT_PROJECT_VERSION: "1"
     DEVELOPMENT_TEAM: "444XUVT54V"
     SWIFT_EMIT_LOC_STRINGS: YES
@@ -53,6 +53,35 @@ targets:
     dependencies:
       - target: PaleoProV2Keyboard
         platformFilter: iOS
+      - target: PaleoProV2Widget
+        platformFilter: iOS
+      - target: PaleoProV2Share
+        platformFilter: iOS
+
+  # ────────────────────────────────────────────────────────────────────
+  # Widget extension — "Letter of the Day" on Home & Lock Screen.
+  # ────────────────────────────────────────────────────────────────────
+  PaleoProV2Widget:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: PaleoProV2Widget
+      - path: PaleoProV2/Core/PaleoLetter.swift
+      - path: PaleoProV2/Core/ScribalFonts.swift
+      - path: PaleoProV2/Core/Shared.swift
+      # Bundle the ancient-script fonts so the evolution widgets can render
+      # each historical hand (not just Siloam).
+      - path: PaleoProV2/Fonts
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: d7mtg.PaleoHebrew.Widget
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SUPPORTS_MACCATALYST: NO
+        GENERATE_INFOPLIST_FILE: NO
+        INFOPLIST_FILE: PaleoProV2Widget/Info.plist
+        # Teal accent so the widget gallery's "Add Widget" button and widget
+        # tints match the app (the widget target is separate from the app).
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
 
   # ────────────────────────────────────────────────────────────────────
   # Keyboard extension — must match V1's bundle so existing installs
@@ -74,6 +103,25 @@ targets:
         GENERATE_INFOPLIST_FILE: NO
         INFOPLIST_FILE: PaleoProV2Keyboard/Info.plist
         CODE_SIGN_ENTITLEMENTS: PaleoProV2Keyboard/PaleoProV2Keyboard.entitlements
+
+  # ────────────────────────────────────────────────────────────────────
+  # Share extension — convert text shared from any app into Paleo-Hebrew.
+  # Self-contained: reuses ConversionEngine + Alphabet, bundles Siloam.
+  # ────────────────────────────────────────────────────────────────────
+  PaleoProV2Share:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: PaleoProV2Share
+      - path: PaleoProV2/Core/PaleoLetter.swift
+      - path: PaleoProV2/Features/Convert/ConversionEngine.swift
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: d7mtg.PaleoHebrew.Share
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SUPPORTS_MACCATALYST: NO
+        GENERATE_INFOPLIST_FILE: NO
+        INFOPLIST_FILE: PaleoProV2Share/Info.plist
 
 schemes:
   PaleoProV2:

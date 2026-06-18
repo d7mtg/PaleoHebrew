@@ -40,6 +40,13 @@ enum Alphabet {
         PaleoLetter(paleo: "𐤕", modern: "ת", name: "Tav", value: 400),
     ]
 
+    /// A deterministic "letter of the day" (cycles through the 22 by day of
+    /// year) for widgets and the Home-Screen quick action.
+    static var letterOfTheDay: PaleoLetter {
+        let day = Calendar.current.ordinality(of: .day, in: .year, for: Date()) ?? 1
+        return letters[(day - 1) % letters.count]
+    }
+
     // MARK: Lookup tables
 
     /// Modern square Hebrew → Paleo glyph.
